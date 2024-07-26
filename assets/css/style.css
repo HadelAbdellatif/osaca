@@ -1,0 +1,123 @@
+:root{
+    --mainColor: #ff206e;
+}
+
+header{
+    background-image: url('../img/bg_osaka.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content a{
+    color: var(--mainColor);
+}
+
+.icon{
+    width: 3rem;
+    height: 3rem;
+    transition: background-color 1s;
+}
+
+.header .icon:hover{
+    background-color: var(--mainColor);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--mainColor);
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: var(--mainColor);
+}
+
+.social-media .icon:hover{
+    background-color: var(--mainColor);
+}
+
+.about{
+    background-image: url('../img/light_dot.jpg');
+}
+
+.title h2{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #cacaca;
+    letter-spacing: 10px;
+}
+
+.title h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.about .about-content p:first-of-type{
+    color: var(--mainColor);
+}
+
+.services{
+    background-image: url('../img/dark_dot.jpg');
+}
+
+.services .title h2{
+    color: #222;
+}
+
+.services .title h3{
+    color: #fff;
+}
+
+.services p{
+    color: #fff;
+}
+
+.services .services-item h3:after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: width 1s;
+}
+
+.services .services-item:hover h3:after{
+    width: 30%;
+}
+
+.services .services-item .icon{
+    background-color: black;
+    transition: background-color 1s;
+}
+
+.services  .services-item:hover  .icon{
+    background-color: var(--mainColor);
+}
+
+.our-clients .person img{
+    width: 7rem;
+    height: 7rem;
+}
+
+.our-clients img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 30px;
+    text-indent: 0;
+    border-radius: 100%;
+}
+
+.team .nav-link {
+    color: black;
+    border: none;
+}
+
+.team .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--mainColor);
+    border: none;
+}
